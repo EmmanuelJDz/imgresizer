@@ -1,6 +1,6 @@
 {
   "name": "file-image-resizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "File image resizer",
   "main": "lib/index.js",
   "directories": {
