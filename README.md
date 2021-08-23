@@ -19,3 +19,5 @@ const base64 = Resizer(img, {
 })
 // ...
 ```
+
+This function returns an object with b64 and file properties.

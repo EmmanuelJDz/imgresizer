@@ -1,0 +1,34 @@
+{
+  "name": "file-image-resizer",
+  "version": "1.0.0",
+  "description": "File image resizer",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "babel": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/01luisfonseca/file-image-resizer.git"
+  },
+  "keywords": [
+    "File",
+    "Image",
+    "Resizer"
+  ],
+  "author": "Luis Fonseca <01luisfonseca@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/01luisfonseca/file-image-resizer/issues"
+  },
+  "homepage": "https://gitlab.com/01luisfonseca/file-image-resizer#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0"
+  },
+  "dependencies": {
+    "canvas-image-resizer": "^1.0.1"
+  }
+}
