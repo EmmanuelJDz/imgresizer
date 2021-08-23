@@ -3,9 +3,6 @@
  * Copyright(c) 2021 Luis Andrés Fonseca
  * MIT Licensed
  */
-
-const resizeImageWithCanvas = require("canvas-image-resizer");
-
 function convertAsyncToURL(data) {
   return new Promise((resolve, reject) => {
     var reader = new FileReader();
@@ -49,7 +46,7 @@ function imageCreator(url) {
   });
 }
 
-module.exports = function resizeFileImageWithCanvas(file, params = {}) {
+module.exports = function (file, params = {}) {
   if (
     (params?.width &&
       !typeof params?.width === "number" &&
@@ -60,10 +57,11 @@ module.exports = function resizeFileImageWithCanvas(file, params = {}) {
     (params?.quality &&
       !typeof params?.quality === "number" &&
       (params?.quality < 0 || params?.quality > 1))
-  )
+      )
     throw new Error(
       "width and height must be positive integers, and quality must be a decimal with values into 0 and 1"
-    );
+      );
+  const resizeImageWithCanvas = require("canvas-image-resizer");
   let b64;
   return convertAsyncToURL(file)
     .then((dt) => imageCreator(dt))

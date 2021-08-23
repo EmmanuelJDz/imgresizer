@@ -29,6 +29,6 @@
     "@babel/core": "^7.15.0"
   },
   "dependencies": {
-    "canvas-image-resizer": "^1.0.2"
+    "canvas-image-resizer": "^1.0.3"
   }
 }
