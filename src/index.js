@@ -30,7 +30,7 @@ function base64ToFile(dataURI, paramsFile = { name: "file" }) {
   }
 
   var newFile = new File([new Uint8Array(content)], paramsFile.name, {
-    type: mimestring,
+    type: 'image/png',
   });
 
   return newFile;
